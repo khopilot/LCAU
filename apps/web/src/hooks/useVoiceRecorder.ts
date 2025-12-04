@@ -34,7 +34,8 @@ function encodeWav(samples: Float32Array, sampleRate: number): ArrayBuffer {
   // Convert float32 to int16
   const int16Samples = new Int16Array(samples.length);
   for (let i = 0; i < samples.length; i++) {
-    const s = Math.max(-1, Math.min(1, samples[i]));
+    const sample = samples[i] ?? 0;
+    const s = Math.max(-1, Math.min(1, sample));
     int16Samples[i] = s < 0 ? s * 0x8000 : s * 0x7fff;
   }
 
