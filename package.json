@@ -1,0 +1,21 @@
+{
+  "name": "lcau",
+  "version": "0.1.0",
+  "private": true,
+  "description": "IFC Cambodia Multilingual Chatbot (FR/KH/EN)",
+  "scripts": {
+    "dev": "pnpm --filter @lcau/web dev",
+    "dev:worker": "pnpm --filter @lcau/worker dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "crawl": "pnpm --filter @lcau/crawler start",
+    "deploy:worker": "pnpm --filter @lcau/worker deploy",
+    "deploy:web": "pnpm --filter @lcau/web deploy"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.14.2"
+}
