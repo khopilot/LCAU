@@ -61,7 +61,7 @@ function encodeWav(samples: Float32Array, sampleRate: number): ArrayBuffer {
   // Write samples
   const offset = 44;
   for (let i = 0; i < int16Samples.length; i++) {
-    view.setInt16(offset + i * 2, int16Samples[i], true);
+    view.setInt16(offset + i * 2, int16Samples[i] ?? 0, true);
   }
 
   return buffer;
