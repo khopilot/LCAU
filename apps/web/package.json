@@ -15,14 +15,14 @@
     "clsx": "^2.1.1",
     "extendable-media-recorder": "^9.2.31",
     "extendable-media-recorder-wav-encoder": "^7.0.132",
-    "next": "^15.0.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "15.5.7",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "react-hot-toast": "^2.6.0",
     "react-markdown": "^10.1.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.5",
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
